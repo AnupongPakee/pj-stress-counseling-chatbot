@@ -1,0 +1,45 @@
+/* Components App.jsx */
+.home .content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.home .left {
+    width: 100%;
+    padding: 3rem;
+}
+
+.home .left h1 {
+    width: 400px;
+    font-size: 4rem;
+    padding-bottom: 4rem;
+    text-transform: uppercase;
+    color: #E0EAFC;
+}
+
+.home a {
+    padding: 1rem;
+    background: none;
+    outline: none;
+    border: 2px solid #E0EAFC;
+    margin-right: 4rem;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    color: #E0EAFC;
+    text-decoration: none;
+}
+
+.home a:nth-child(2) {
+    border-radius: 1rem 0.1rem 1rem 0.1rem;
+}
+
+.home a:nth-child(3) {
+    border-radius: 0.1rem 1rem 0.1rem 1rem;
+}
+
+.home a:hover {
+    background-color: #E0EAFC;
+    color: #6F3089;
+    font-weight: bold !important;
+}

@@ -1,18 +1,26 @@
-import { useState } from 'react'
+import React from 'react'
 import { NavLink } from 'react-router-dom'
 
+import STYLE from "./style/Style"
+import CONTENT from "./content"
+
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-    <h1>Hello World in React + Vite.js</h1>
-    <NavLink to={"/pj-stress-counseling-chatbot/register"}>Go to register</NavLink> <br />
-    <NavLink to={"/pj-stress-counseling-chatbot/login"}>Go to Login</NavLink> <br />
-    <NavLink to={"/pj-stress-counseling-chatbot/setting"}>Go to setting</NavLink> <br />
-    <NavLink to={"/pj-stress-counseling-chatbot/admin"}>Go to admin</NavLink> <br />
-    <NavLink to={"/pj-stress-counseling-chatbot/test"}>Go to test</NavLink>
-    </>
+    <div className='container home' style={STYLE.container}>
+      <div className="content-bg" style={STYLE['content-bg']}>
+        <div className="bg-1" style={STYLE['bg-1']}></div>
+        <div className="bg-2" style={STYLE['bg-2']}></div>
+        <div className="bg-3" style={STYLE['bg-3']}></div>
+      </div>
+      <div className="content">
+        <div className="left">
+          <h1 style={STYLE.font_family['en']}>DPU <br /> Stress <br /> Counseling <br /> Chatbot</h1>
+          <NavLink to={"/pj-stress-counseling-chatbot/login"} style={STYLE.font_family.th}>{CONTENT.home['th']['sign-in']}</NavLink>
+          <NavLink to={"/pj-stress-counseling-chatbot/register"} style={STYLE.font_family.th}>{CONTENT.home['th']['sign-up']}</NavLink>
+        </div>
+      </div>
+    </div>
   )
 }
 
