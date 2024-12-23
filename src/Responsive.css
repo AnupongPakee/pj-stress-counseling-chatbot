@@ -20,8 +20,12 @@
     * {
         font-size: 14px;
     }
+    .home .left {
+        padding: 0.6rem !important;
+    }
     .home .left h1 {
         width: 360px !important;
+        padding-bottom: 2.6rem !important;
     }
     .home .bg-1 {
         display: none;
@@ -37,6 +41,9 @@
 @media screen and (max-width: 640px) {
     * {
         font-size: 10px;
+    }
+    .home .left {
+        padding: 2rem !important;
     }
     .home .left h1 {
         width: 260px !important;
