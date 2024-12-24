@@ -1,9 +1,10 @@
 const style = {
     "container": {
+        position: "relative",
         width: "100vw",
         height: "100vh",
         padding: "1.6rem",
-        border: "2px solid greenyellow",
+        overflow: "hidden",
         backgroundColor: "rgba(224, 234, 252, 1)"
     },
     "font_family":
@@ -30,7 +31,6 @@ const style = {
     },
     "bg-1": {
         position: "relative",
-        minWidth: "640px",
         width: "100%",
         height: "100%",
         backgroundColor: "#6F3089",
@@ -39,7 +39,6 @@ const style = {
     },
     "bg-2": {
         position: "relative",
-        minWidth: "320px",
         width: "100%",
         height: "100%",
         backgroundColor: "#6F3089",
@@ -48,7 +47,6 @@ const style = {
     },
     "bg-3": {
         position: "relative",
-        minWidth: "320px",
         width: "100%",
         height: "100%",
         backgroundColor: "#6F3089",

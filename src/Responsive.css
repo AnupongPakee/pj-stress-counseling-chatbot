@@ -1,0 +1,80 @@
+/* moblie */
+/* Not Support Screen Size */
+@media screen and (max-width: 319px) {
+    .not-support {
+        display: flex;
+    }
+}
+/* 320 + 568 */
+@media screen and (min-width: 320px) {
+    * {
+        font-size: 8px;
+    }
+    .home .bg-1 {
+        min-width: 320px;
+    }
+    .home .bg-2,
+    .home .bg-3 {
+        display: none;
+    }
+}
+/* 360 + 780 */
+/* 360 + 800 (%) */
+/* 360 + 820 */
+/* 393 + 876 */
+/* 393 + 969 */
+@media screen and (min-width: 360px) {
+    * {
+        font-size: 10px;
+    }
+}
+/* 414 + 896 */
+@media screen and (min-width: 414px) {
+    * {
+        font-size: 12px;
+    }
+}
+
+/* tablet */
+/* 768 + 1024 (%) */
+@media screen and (min-width: 768px) {
+    * {
+        font-size: 16px;
+    }
+    .home .bg-1 {
+        min-width: 584px;
+    }
+    .home .bg-2 {
+        display: flex;
+        min-width: 184px;
+    }
+}
+
+/* window */
+/* 1280 + 720 (base) */ 
+@media screen and (min-width: 1280px) {
+    * {
+        font-size: 18px;
+    }
+    .home .bg-1 {
+        min-width: 640px;
+    }
+    .home .bg-2 {
+        display: flex;
+        min-width: 320px;
+    }
+    .home .bg-3 {
+        display: flex;
+        min-width: 320px;
+    }
+}
+
+/* 1920 + 1080 (%) */
+@media screen and (min-width: 1920px) {
+    * {
+        font-size: 22px;
+    }
+    .home .bg-1 {
+        min-width: 960px;
+    }
+}

@@ -2,9 +2,10 @@
 .toast {
     display: none;
     position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 300px;
+    top: 1rem;
+    right: 1rem;
+    max-width: 360px;
+    width: 90%;
     height: auto;
     background-color: #6F3089;
     color: #E0EAFC;

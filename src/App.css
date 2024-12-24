@@ -4,3 +4,20 @@
   box-sizing: border-box;
   font-size: 16px;
 }
+
+.not-support {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #E0EAFC;
+}
+
+.not-support h1 {
+  font-size: 12vw;
+  color: #6F3089;
+}

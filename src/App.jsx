@@ -1,10 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 
 import STYLE from "./style/Style"
 import CONTENT from "./content"
+import TOAST from "./Toast"
 
 function App() {
+  const [toast, setToast] = useState({})
+
+  setTimeout(() => {
+    setToast({
+      "show": "true",
+      "status": "warn",
+      "message": window.screen.width + "/" + window.screen.height
+    })
+  })
 
   return (
     <div className='container home' style={STYLE.container}>
@@ -20,9 +30,10 @@ function App() {
           <NavLink to={"/pj-stress-counseling-chatbot/register"} style={STYLE.font_family.th}>{CONTENT.home['th']['sign-up']}</NavLink>
         </div>
       </div>
-      <div style={{position: "absolute", top: "50%", left: "50%", padding: "1rem",color: "white", fontWeight: "bold", border: "2px solid #eoeadf"}}>
-        {window.screen.width}/{window.screen.height}
+      <div className="not-support">
+        <h1 style={STYLE.font_family.en}>Not <br /> Support <br /> Screen <br /> Size <br /> ({window.screen.width} / {window.screen.height}) <br /> 🥲</h1>
       </div>
+      <TOAST data={toast}/>
     </div>
   )
 }
