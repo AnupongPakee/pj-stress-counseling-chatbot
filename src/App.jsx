@@ -20,6 +20,9 @@ function App() {
           <NavLink to={"/pj-stress-counseling-chatbot/register"} style={STYLE.font_family.th}>{CONTENT.home['th']['sign-up']}</NavLink>
         </div>
       </div>
+      <div style={{position: "absolute", top: "50%", left: "50%", padding: "1rem",color: "white", fontWeight: "bold", border: "2px solid #eoeadf"}}>
+        {window.screen.width}/{window.screen.height}
+      </div>
     </div>
   )
 }

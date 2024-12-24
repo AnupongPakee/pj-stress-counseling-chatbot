@@ -3,6 +3,7 @@ const style = {
         width: "100vw",
         height: "100vh",
         padding: "1.6rem",
+        border: "2px solid greenyellow",
         backgroundColor: "rgba(224, 234, 252, 1)"
     },
     "font_family":
